@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* Optional custom styles */
+body {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  font-family: 'Segoe UI', sans-serif;
+}
