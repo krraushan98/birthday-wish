@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 const Countdown = ({ onComplete }) => {
   const calculateTimeLeft = () => {
-    const difference = +new Date('2025-04-25T23:59:59') - +new Date();
+    const difference = +new Date('2025-04-19T23:59:59') - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -35,7 +35,7 @@ const Countdown = ({ onComplete }) => {
   }, [timeLeft]);
 
   return (
-    <div className="text-4xl font-bold bg-white/10 px-6 py-4 rounded-xl shadow-xl text-white">
+    <div className="text-4xl font-bold bg-white/10 px-6 py-4 rounded-xl shadow-xl text-pink-500">
       {timeLeft ? (
         <p>
           ⏳ Countdown: {timeLeft.days} days {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s

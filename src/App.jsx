@@ -13,6 +13,7 @@ import MusicPlayer from './component/MusicPlayer';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './conuntcss.css'
 
 function App() {
   const [countdownFinished, setCountdownFinished] = useState(false);
@@ -21,39 +22,41 @@ function App() {
 
   const handleSurpriseClick = () => {
     setShowContent(true);
-    setPlayMusic(true); // now tell MusicPlayer to start
+    setPlayMusic(true);
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-black text-white">
-      <StarryBackground />
-
-      <div className="relative z-10 flex flex-col justify-center items-center gap-10 text-center p-6">
-        <Countdown onComplete={() => setCountdownFinished(true)} />
-
-        {countdownFinished && !showContent && (
-          <button
-            onClick={handleSurpriseClick}
-            className="bg-pink-600 text-white px-6 py-3 rounded-full text-lg hover:bg-pink-700 transition shadow-lg"
-          >
-            🎁 Click for Surprise
-          </button>
-        )}
-
-        {showContent && (
-          <>
+    <div className="relative min-h-screen overflow-hidden bg-black text-white count-bg">
+      {!showContent ? (
+        <div className="relative z-10 flex flex-col justify-center items-center text-center h-screen px-4">
+          <Countdown onComplete={() => setCountdownFinished(true)} />
+          {countdownFinished && (
+            <button
+              onClick={handleSurpriseClick}
+              className="mt-8 bg-pink-600 text-white px-6 py-3 rounded-full text-lg hover:bg-pink-700 transition shadow-lg"
+            >
+              🎁 Click for Surprise
+            </button>
+          )}
+        </div>
+      ) : (
+        <>
+          <StarryBackground />
+          <div className="relative z-10 overflow-y-auto h-screen px-4 pt-20 pb-10 scroll-smooth">
             <Fireworks />
             <ConfettiEffect />
             <FloatingBalloons />
-            <PhotoSlideshow />
-            <Hero />
-            <PersonalLetter />
-            <Message />
+            <div className="flex flex-col items-center text-center space-y-10 max-w-[800px] mx-auto w-full">
+              <PhotoSlideshow />
+              <Hero />
+              <PersonalLetter />
+              <Message />
+            </div>
             {/* <SurpriseModal /> */}
             <MusicPlayer play={playMusic} />
-          </>
-        )}
-      </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }
