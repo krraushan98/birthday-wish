@@ -2,10 +2,10 @@ import Slider from 'react-slick';
 
 const PhotoSlideshow = () => {
   const images = [
-    "src/assets/react.svg",
-    "src/assets/react.svg",
-    "src/assets/react.svg",
-    "src/assets/react.svg",
+    "public/react.svg",
+    "public/react.svg",
+    "public/react.svg",
+    "public/react.svg",
   ];
 
   const settings = {
