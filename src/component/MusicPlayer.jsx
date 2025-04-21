@@ -36,7 +36,7 @@ const MusicPlayer = ({ play }) => {
   return (
     <div className="fixed bottom-5 right-5 z-50">
       <audio ref={audioRef} loop>
-        <source src="public/happy-birthday-314197.mp3" type="audio/mpeg" />
+        <source src="/happy-birthday-314197.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
 
