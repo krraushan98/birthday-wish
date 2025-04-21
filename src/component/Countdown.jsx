@@ -7,6 +7,7 @@ const Countdown = ({ onComplete }) => {
 
     if (difference > 0) {
       timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
         seconds: Math.floor((difference / 1000) % 60),
@@ -37,7 +38,7 @@ const Countdown = ({ onComplete }) => {
     <div className="text-4xl font-bold bg-white/10 px-6 py-4 rounded-xl shadow-xl text-white">
       {timeLeft ? (
         <p>
-          ⏳ Countdown: {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
+          ⏳ Countdown: {timeLeft.days}days {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
         </p>
       ) : (
         <p>🎉 Time's up! Let the celebration begin!</p>
