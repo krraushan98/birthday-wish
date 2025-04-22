@@ -32,7 +32,7 @@ const Countdown = ({ onComplete }) => {
     }, 1000);
 
     return () => clearTimeout(timer);
-  }, [timeLeft]);
+  }, [onComplete, timeLeft]);
 
   return (
     <div className="text-4xl font-bold bg-white/10 px-6 py-4 rounded-xl shadow-xl text-pink-500">
