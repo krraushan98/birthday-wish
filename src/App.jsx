@@ -49,8 +49,8 @@ function App() {
             <div className="flex flex-col items-center text-center space-y-10 max-w-[800px] mx-auto w-full">
               <PhotoSlideshow />
               <Hero />
-              <PersonalLetter />
               <Message />
+              <PersonalLetter />
             </div>
             {/* <SurpriseModal /> */}
             <MusicPlayer play={playMusic} />
