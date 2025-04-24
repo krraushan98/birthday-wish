@@ -12,8 +12,7 @@ const PersonalLetter = () => {
         <h2 className="text-2xl font-bold mb-4 text-pink-500">A Letter Just for You 💌</h2>
         <p className="leading-relaxed">
           Dear My Love,<br /><br />
-          I can't put into<br /><br />
-          words how thankful I am for you-for
+          I can't put into words how thankful I am for you-for
           walking into my life and filling it
           with so much light Thank you for
           being the reason behind my smiles, for
