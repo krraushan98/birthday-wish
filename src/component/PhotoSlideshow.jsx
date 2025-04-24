@@ -8,13 +8,14 @@ const PhotoSlideshow = () => {
   ];
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     autoplay: true,
     speed: 1000,
     autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
   };
 
   return (

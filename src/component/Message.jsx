@@ -10,22 +10,10 @@ const Message = () => {
       transition={{ delay: 1.5, duration: 1 }}
     >
       <p>
-        Dear My Love,<br /><br />
-        I can't put into
-        words how thankful I am for you-for
-        walking into my life and filling it
-        with so much light Thank you for
-        being the reason behind my smiles, for
-        understanding me like no one else can,
-        and for standing by my side no
-        matter what life throws our way<br /><br />
-
-
-        You're my
-        blessing from the universe, my proof that
-        miracles do happen. I'll always be grateful
-        for the day I found you, and
-        even more grateful that you stayed.
+        Dear [Her Name],<br /><br />
+        Wishing you all the joy, love, and cake this world can offer! 🥳  
+        May your day be as wonderful and inspiring as you are. 🌸💖<br /><br />
+        – From someone who truly cares 💫
       </p>
     </motion.div>
   );
