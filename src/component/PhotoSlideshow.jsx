@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 const PhotoSlideshow = () => {
   const images = [
     "/birthday-wish/photo1.jpg",
+    "/birthday-wish/photo3.jpg",
     "/birthday-wish/photo2.jpg",
     
   ];
