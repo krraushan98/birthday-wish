@@ -2,10 +2,9 @@ import Slider from 'react-slick';
 
 const PhotoSlideshow = () => {
   const images = [
-    "/birthday-wish/react.svg",
-    "/birthday-wish/react.svg",
-    "/birthday-wish/react.svg",
-    "/birthday-wish/react.svg",
+    "/birthday-wish/photo1.jpg",
+    "/birthday-wish/photo2.jpg",
+    
   ];
 
   const settings = {
