@@ -9,7 +9,7 @@ const Hero = () => {
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 1 }}
 >
-  ✨ Happy Birthday, <span className="text-yellow-300">My Love❤️</span>! ✨
+  ✨ जन्मदिन की हार्दिक शुभकामनाएँ,, <span className="text-yellow-300">मेरी जान! 🎉❤️</span>! ✨
 </motion.div>
   );
 };

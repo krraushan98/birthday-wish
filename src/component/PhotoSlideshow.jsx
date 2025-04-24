@@ -1,11 +1,10 @@
-import Slider from 'react-slick';
+import Slider from "react-slick";
 
 const PhotoSlideshow = () => {
   const images = [
     "/birthday-wish/photo1.jpg",
     "/birthday-wish/photo3.jpg",
     "/birthday-wish/photo2.jpg",
-    
   ];
 
   const settings = {
@@ -20,11 +19,16 @@ const PhotoSlideshow = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto shadow-2xl rounded-xl overflow-hidden bg-white p-4">
+    <div className="w-full max-w-4xl lg:h-[85vh] mx-auto shadow-2xl rounded-xl overflow-hidden bg-white p-6">
+
       <Slider {...settings}>
         {images.map((img, i) => (
           <div key={i}>
-            <img src={img} alt={`Slide ${i}`} className="rounded-xl w-full h-64 object-cover" />
+            <img
+              src={img}
+              alt={`Slide ${i}`}
+              className="rounded-xl w-full h-95 sm:h-85 lg:h-[78vh] object-cover sm:object-cover object-contain"
+            />
           </div>
         ))}
       </Slider>
